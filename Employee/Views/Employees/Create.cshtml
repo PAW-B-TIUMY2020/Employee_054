@@ -4,9 +4,8 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+<h4>Employee Form</h4>
 
-<h4>Employees</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,33 +13,30 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="FullName" class="control-label"></label>
-                <input asp-for="FullName" class="form-control" />
+                <input asp-for="FullName" style="width: 550px;" class="form-control" />
                 <span asp-validation-for="FullName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EmpCode" class="control-label"></label>
-                <input asp-for="EmpCode" class="form-control" />
+                <input asp-for="EmpCode" style="width: 550px;" class="form-control" />
                 <span asp-validation-for="EmpCode" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Position" class="control-label"></label>
-                <input asp-for="Position" class="form-control" />
+                <input asp-for="Position" style="width: 550px;" class="form-control" />
                 <span asp-validation-for="Position" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="OfficeLocation" class="control-label"></label>
-                <input asp-for="OfficeLocation" class="form-control" />
+                <input asp-for="OfficeLocation" style="width: 550px;" class="form-control" />
                 <span asp-validation-for="OfficeLocation" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+            <div style="margin-left:15px; width: 800px;" class="form-group">
+                <input type="submit" value="Submit" style="width: 250px;" class="btn btn-primary" />
+                <a style="margin-left:80px;" asp-action="Index"><i class="fas fa-table"></i>&ensp;Back to List</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
